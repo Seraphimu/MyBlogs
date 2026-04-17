@@ -30,10 +30,10 @@ int open(const char *pathname, int flags, .../* mode_t mode */ );
 打开文件的方式常用的有如下几种:
 
 - O_RDONLY: 只读方式打开
-- O_WRONLY: 只情怀方式打开
+- O_WRONLY: 只写方式打开
 - O_CREAT:如果文件不存在, 创建之
 - O_TRUNC: 覆盖原有内容
-- O_WRONLY:读写方式打开
+- O_RDWR:读写方式打开
 
 
 实例: 打开一个文件, 并打印其文件描述符 `fd`
